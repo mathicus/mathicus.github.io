@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -32,3 +33,10 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+=======
+title: jonfleming.ai
+description: Jon Fleming AI GitHub Pages.
+show_downloads: true
+google_analytics:
+theme: jekyll-theme-minimal
+>>>>>>> 7f074f1b3759d7bb8741427ef2e2d4ea5971fa56

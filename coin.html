@@ -1,11 +1,15 @@
 <html>
   <head>
     <title>Coin</title>
-    
+    <script>
+      function compute() {
+        document.getElementById("total").innerText = document.getElementById("coin").value * document.getElementById("price").value;
+      }
+    </script>
   </head>
   <body>
-    Coin <input id="coin" type="text"></br>
-    Price <input id="price" type="text"></br>
-    Value <span id="total">
+    Coin <input id="coin" type="text" value="0.2529713"></br>
+    Price <input id="price" type="text" value="2736"></br>
+    <input type="button" onclick="compute()">Value <span id="total">
   </body>
 </html>

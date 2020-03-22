@@ -1,9 +1,9 @@
 ---
 layout: post
-title: You're up and running!
+title: My Definition of Artificial General Intelligence
 ---
 
-This is the first post.
+AGI is the goal.
 
 ![_config.yml]({{ site.baseurl }}/images/logo_sm.png)
 

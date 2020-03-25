@@ -2,6 +2,7 @@
 layout: post
 title: Speech Synthesis
 ---
+[breathing](https://htmlpreview.github.io/?https://raw.githubusercontent.com/jonfleming/SpeechSynthesisAPI/master/breathing.htm)
 
 ## Finding Your Voice
 The [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) enables you to incorporate voice data into web apps. The Web Speech API has two parts: SpeechSynthesis (Text-to-Speech), and SpeechRecognition (Asynchronous Speech Recognition.)
@@ -27,8 +28,6 @@ for (var i = 0; i < available_voices.length; i++) {
 if (english_voice === '')
     english_voice = available_voices[0];
 ~~~
-
-[breathing](https://htmlpreview.github.io/?https://raw.githubusercontent.com/jonfleming/SpeechSynthesisAPI/master/breathing.htm)
 
 ## GitHub Projects
 - [Pages](https://github.com/jonfleming/jonfleming.github.io/tree/master/_posts)

@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html>
-<body bgcolor="#000000">
-
+  <head>
+    <title>lannk</title>
+    <style>
+      label {
+        color: white;
+      }
+    </style>
+  </head>
+  <body bgcolor="#000000">
+    <script>
+    var interval = setInterval(function(){
+      var now = new Date();
+      document.getElementById('time').innerHTML=now;
+    }, 1000);
+    </script>
+  <label id="time">time</label>
 </body>
 </html>

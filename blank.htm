@@ -12,8 +12,8 @@
   <body bgcolor="#000000">
     <script>
     var interval = setInterval(function(){
-      var now = new Date();
-      document.getElementById('time').innerHTML=now;
+      var now = (new Date()).toString();
+      document.getElementById('time').innerHTML=now.substring(0, now.indexOf('GMT') - 1);
     }, 1000);
     </script>
   <label id="time">time</label>

@@ -12,7 +12,11 @@
   <body bgcolor="#000000">
     <label id="time">time</label>
     <canvas id="meter" width="500" height="50"></canvas>
-
+    <scrip>
+    var interval = setInterval(function(){
+      var now = (new Date()).toString();
+      document.getElementById('time').innerHTML=now.substring(0, now.indexOf('GMT') - 1);
+    }, 1000);
     </script>
 </body>
 </html>

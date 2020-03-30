@@ -38,9 +38,19 @@ canvas {
 <div id="info">
   <h1>Canvas Asteroids:</h1>
   <p>Use [A][S][W][D] or [&larr;][&uarr;][&darr;][&rarr;] to MOVE</p>
-  <p>Use [SPACE] or [K] to SHOOT</p>
+	<p>Use [SPACE] or [K] to SHOOT</p>
+  <div>
+		<p>HIGH SCORE <label id="high">0</label></p`>
+		<p>Score <label id="score">0</label></p`>
+		<p>Lives <label id="lives"></label></label</p>
+	</div>
 </div>
 <script>
+var high = 0;
+var score = 0;
+var lives = 3;
+document.getElementById('lives').innerHTML = ' ' + lives + ' ';
+
   //pool.js ...........................................................
 
 var Pool = (function()
@@ -802,6 +812,11 @@ function checkBulletAsteroidCollisions()
 				b.blacklisted = true;
 
 				destroyAsteroid(a);
+				// jon - incremment score
+				score += 100;
+				if (score > high) high = score;
+				document.getElementById('score').innerHTML = score;
+				document.getElementById('high').innerHTML = high;
 			}
 		}
 	}
@@ -824,8 +839,23 @@ function checkShipAsteroidCollisions()
 
 			generateShipExplosion();
 			destroyAsteroid(a);
+			lives = lives - 1;
+			debugger;
+			document.getElementById('lives').innerHTML = ' ' + lives + ' ';
+			if(lives < 1) 
+			{
+				gameOver();
+			}
 		}
 	}
+}
+
+function gameOver()
+{
+	score = 0;
+	lives = 3;
+	document.getElementById('score').innerHTML = score;
+	document.getElementById('lives').innerHTML = ' ' + lives + ' ';
 }
 
 function generateShipExplosion()

@@ -1,8 +1,8 @@
 > AI Blog using Jekyll and GitHub Pages
 
-## fleming.ai
+## techion.net
 
-# Jon Fleming AI 
+# Techion 
 
 This site was built using Jekyll Now from https://github.com/barryclark/jekyll-now
 
